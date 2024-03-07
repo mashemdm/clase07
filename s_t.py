@@ -149,6 +149,7 @@ if result:
         except:
             my_file_name = "audio"
         tts.save(f"temp/{my_file_name}.mp3")
+        from PIL import ImageFont, ImageDraw
         font = ImageFont.truetype("path/to/your/font.ttf", size=20)
         img = Image.new("RGB", (500, 100), color=(255, 255, 255))
         draw = ImageDraw.Draw(img)
