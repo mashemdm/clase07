@@ -149,7 +149,7 @@ if result:
         except:
             my_file_name = "audio"
         tts.save(f"temp/{my_file_name}.mp3")
-        return my_file_name, trans_text
+       
 
         font = ImageFont.truetype("path/to/your/font.ttf", size=20)
         img = Image.new("RGB", (500, 100), color=(255, 255, 255))
@@ -157,9 +157,9 @@ if result:
         draw.text((10, 10), trans_text, font=font, fill=(0, 0, 0), encoding="utf-8")
 
     # Display the image on Streamlit
-    st.image(img, use_column_width=True)
+        st.image(img, use_column_width=True)
 
-    return my_file_name, trans_text
+       return my_file_name, trans_text
     
     
     display_output_text = st.checkbox("Mostrar el texto")
