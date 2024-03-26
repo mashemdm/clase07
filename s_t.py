@@ -146,7 +146,7 @@ if result:
         tts = gTTS(trans_text, lang=output_language, tld=tld, slow=False)
         try:
             my_file_name = text[0:20]
-         except:
+        except:
             my_file_name = "audio"
         tts.save(f"temp/{my_file_name}.mp3")
         return my_file_name, trans_text
