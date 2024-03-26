@@ -13,7 +13,7 @@ from gtts import gTTS
 from googletrans import Translator
 
 
-st.title("Interfaces Multimodales")
+st.title("Audio texto Marcela DM")
 st.subheader("TRADUCTOR")
 
 
